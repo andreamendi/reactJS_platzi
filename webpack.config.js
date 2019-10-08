@@ -10,18 +10,21 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    devServer: {
+        port: 9000
+    },
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use:{
+                use: {
                     loader: "babel-loader"
                 }
             },
             {
                 test: /\.html$/,
-                use:{
+                use: {
                     loader: "html-loader"
                 }
             }
@@ -30,7 +33,7 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
             template: './public/index.html',
-            filename:'./index.html'
+            filename: './index.html'
         }),
     ]
 };
