@@ -60,7 +60,7 @@ const Login = (props) => {
           <div><img src={googleIcon} alt='Inicia sesión con Google' /> Inicia sesión con Google</div>
           <div><img src={twitterIcon} alt='Inicia sesión con Twitter' /> Inicia sesión con Twitter</div>
         </section>
-        <p className='login__container--register'>No tienes ninguna cuenta
+        <p className='login__container--register'>No tienes ninguna cuenta &nbsp;
           <Link to='/register'>
             Regístrate
           </Link>
